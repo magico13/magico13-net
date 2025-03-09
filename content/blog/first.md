@@ -1,6 +1,6 @@
 +++
-title = "My first post"
-date = 2025-03-07
+title = "Hello world"
+date = 2025-03-08
 +++
 
-This is my first blog post.
+Hello, world!
