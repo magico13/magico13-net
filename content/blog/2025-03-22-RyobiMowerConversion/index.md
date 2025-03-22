@@ -85,4 +85,6 @@ The triangle plug used by the mower is pretty much the same as one used by some 
 
 Here's an image from when just about everything was in place. The actual process of pulling out the old batteries and wiring up the new ones in their place is fairly straightforward, just make sure to follow the instructions for your BMS and battery gauge and any other components you have installed. I plan on making a follow up post on how to interact with this particular BMS over RS485 if you want to monitor voltages or modify the BMS settings at all. The batteries have really brought new life to the mower and I am hoping they will continue to work well for the life of the mower. I may need to go back and 3d print some custom mounts to ensure nothing can move, check on the zip ties that I used for cable routing to ensure they're not degrading, and double check that all the connections are secure, but those checks will be something I do before the first mow this season. Given that it's currently snowing, I still have some time before that's needed!
 
+![nearly finished](nearly_final.jpg)
+
 This blog doesn't have comments but if you find this and have any questions, my email is not hard to find if you look at my github profile. Good luck with your projects!
