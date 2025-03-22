@@ -1,7 +1,6 @@
 +++
 title = "Ryobi Mower Lithium-Iron/LiFePO4 Battery Conversion"
-date = 2025-03-23
-draft = true
+draft = false
 +++
 
 ## The Problem
@@ -56,6 +55,8 @@ So our shopping list looks like this:
 
 The most important part of this project is picking the batteries. The old batteries were four 12V 50Ah lead-acid batteries arranged in series to give 48V and theoretically 2.4kWh of capacity. But since we can really only discharge down to half, it's more like 1.2kWh of total capacity.
 
+![lead-acid batteries](leadacid.jpg)
+
 So our target is a combined pack in 16S configuration with ideally at least 25Ah of total capacity to match what we could get out of the old pack. But ideally we can increase our total battery capacity and stay within the space constraints of the old battery compartment since these new ones should be more energy dense.
 
 You can of course buy new batteries from Amazon or a dedicated battery site, looking currently it seems to be about $60 for a single 12V 25Ah battery, but I wanted to try to save a bit of money and also reuse batteries that had been pulled out of service elsewhere, so I turned to batteryhookup.com to see what I could find. I am not affiliated with them and I am not being paid to mention them but if you want to get batteries pulled from elsewhere and give them new purpose, they're definitely worth checking out.
@@ -63,6 +64,8 @@ You can of course buy new batteries from Amazon or a dedicated battery site, loo
 The batteries I ended up finding were two [Valence U27-24XP](https://www.lithionbattery.com/wp-content/uploads/2019/12/Valence-U27-24XP-Data-Sheet-210623.pdf) batteries, which I would link up with a 16S BMS (the [7-17S LiFePO4 + CAN + RS485 from their site](https://batteryhookup.com/products/12v-lifepo4-smart-bms-w-low-temp-cutoff)). Rather than four 12V batteries I opted for two 24V batteries since that reduced the space lost due to extra casing and simplified the wiring. These batteries are significantly more capacity, 72Ah when new, giving over 1.8kWh *each* for 3.6kWh total. That's about **three times** what we were targeting, which should give us a pretty significant boost in mowing time even if they're not at full capacity anymore. We'd need 12 of those $60 batteries mentioned before to reach similar levels, over $700, but these used ones cost $170 each for $340 total (before the 5% off coupon).
 
 They're just a little too big to fit inside the battery trays, but they can still fit on their sides and be held down by the original retaining bar. The circuit boards inside the batteries aren't helpful, but the balance leads are all broken out into a connector that fits a standard pitch male header, so we can devise a simple system to hook up the BMS to the balance leads without having the crack open the shell of the batteries.
+
+![battery test fit](test_fit.jpg)
 
 ## Battery Gauge
 
@@ -72,4 +75,14 @@ Technically this is an optional component. The BMS will prevent discharging the 
 
 ## Replacement Charger
 
-TODO: Write this.
+The charger that comes with the mower is designed for lead-acid batteries, and while it may work ok with the replacement batteries for a while, it won't really charge them properly. For that we want a charger designed specifically for lithium-iron phosphate batteries.
+
+The triangle plug used by the mower is pretty much the same as one used by some golf cart brands, so you can find chargers online that should work with light modifications. What I opted for instead is getting an "onboard" charger and taking the plug off of the old charger and attaching it instead. That way I don't need to modify the plug, and the [charger I got](https://www.amazon.com/dp/B0BQZ2LV9N) is made by an American company and seemed more reliable than the others I was looking at.
+
+![first charge](charging.jpg)
+
+## Wrap Up
+
+Here's an image from when just about everything was in place. The actual process of pulling out the old batteries and wiring up the new ones in their place is fairly straightforward, just make sure to follow the instructions for your BMS and battery gauge and any other components you have installed. I plan on making a follow up post on how to interact with this particular BMS over RS485 if you want to monitor voltages or modify the BMS settings at all. The batteries have really brought new life to the mower and I am hoping they will continue to work well for the life of the mower. I may need to go back and 3d print some custom mounts to ensure nothing can move, check on the zip ties that I used for cable routing to ensure they're not degrading, and double check that all the connections are secure, but those checks will be something I do before the first mow this season. Given that it's currently snowing, I still have some time before that's needed!
+
+This blog doesn't have comments but if you find this and have any questions, my email is not hard to find if you look at my github profile. Good luck with your projects!
