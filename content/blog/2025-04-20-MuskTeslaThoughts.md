@@ -23,7 +23,7 @@ This is not a topic I really want to have to discuss at all, in part because my 
 - The Tesla Model 3 is the most sold EV in the US, and is [still #2 behind the Model Y in new sales in 2024](https://electrek.co/2025/01/14/top-10-best-selling-evs-us-2024/).
   - This has made the Model 3 as synonymous with EVs as the Prius is to hybrids.
 - In 2021, the Model 3 was the most American car per cars.com, and was [second after the Model Y in 2022](https://www.cars.com/articles/2022-cars-com-american-made-index-which-cars-are-the-most-american-451057/)
-- The Model 3 is [one of the most efficient EVs](https://www.cars.com/articles/top-10-most-efficient-electric-cars-447501/) long-range EVs, after the IONIQ 6 and Lucid Air.
+- The Model 3 is [one of the most efficient long-range EVs](https://www.cars.com/articles/top-10-most-efficient-electric-cars-447501/), after the IONIQ 6 and Lucid Air.
 
 ## My Preferences
 
